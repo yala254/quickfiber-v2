@@ -77,6 +77,7 @@ function SpeedGauge({
 
 export function Pricing({ id, eyebrow, title, subtitle, plans, tone = "light" }: Props) {
   const dark = tone === "dark";
+  const maxSpeed = Math.max(...plans.map((p) => p.speed));
 
   return (
     <section
