@@ -16,8 +16,8 @@ export const waLink = (planName: string) =>
 export const homePlans: Plan[] = [
   {
     name: "Bronze Package",
-    speed: 25,
-    price: "Ksh 2,999",
+    speed: 20,
+    price: "Ksh 2,000",
     features: [
       "Fast web browsing",
       "SD movie & music streaming",
@@ -29,11 +29,11 @@ export const homePlans: Plan[] = [
   },
   {
     name: "Silver Package",
-    speed: 50,
-    price: "Ksh 3,999",
+    speed: 30,
+    price: "Ksh 3,000",
     features: [
       "Fast web browsing",
-      "SD movie & music streaming",
+      "HD movie & music streaming",
       "Browsing, social media & email",
       "Multiple device streaming",
       "Superfast video downloads",
@@ -42,8 +42,8 @@ export const homePlans: Plan[] = [
   },
   {
     name: "Gold Package",
-    speed: 75,
-    price: "Ksh 4,999",
+    speed: 40,
+    price: "Ksh 4,000",
     featured: true,
     features: [
       "Fast web browsing",
@@ -56,11 +56,11 @@ export const homePlans: Plan[] = [
   },
   {
     name: "Diamond Package",
-    speed: 100,
-    price: "Ksh 5,999",
+    speed: 50,
+    price: "Ksh 5,000",
     features: [
       "Fast web browsing & video calls",
-      "HD TV shows and movies",
+      "Full HD TV shows and movies",
       "Internet surfing, social media & email",
       "Superfast streaming",
       "Superfast video downloads",
