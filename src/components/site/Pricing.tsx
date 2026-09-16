@@ -151,6 +151,16 @@ export function Pricing({ id, eyebrow, title, subtitle, plans, tone = "light" }:
                 <span className="text-sm font-medium opacity-70"> /Month</span>
               </p>
 
+              <div
+                className={`mt-4 flex justify-center ${plan.featured ? "text-primary-foreground" : dark ? "text-navy-foreground" : "text-navy"}`}
+              >
+                <SpeedGauge
+                  speed={plan.speed}
+                  max={maxSpeed}
+                  accent={plan.featured ? "var(--navy)" : "var(--primary)"}
+                />
+              </div>
+
               <ul className="mt-6 flex-1 space-y-2.5 text-sm">
                 {plan.features.map((f) => (
                   <li key={f} className="flex gap-2">
