@@ -12,13 +12,17 @@ const navItems = [
 
 export function Logo() {
   return (
-    <a href="#top" aria-label="Quick Fiber home" className="inline-flex shrink-0 items-center">
+    <a
+      href="#top"
+      aria-label="Quick Fiber home"
+      className="inline-flex shrink-0 items-center rounded-md border-l-4 border-primary bg-background px-3 py-1.5 shadow-lg ring-1 ring-border/40 transition-transform duration-200 hover:-translate-y-0.5"
+    >
       <img
         src={logoAsset.url}
         alt="Quick Fiber"
         width={210}
         height={84}
-        className="h-14 w-auto object-contain sm:h-16"
+        className="h-11 w-auto object-contain sm:h-12"
       />
     </a>
   );
