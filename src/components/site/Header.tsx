@@ -1,13 +1,14 @@
 import { useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { Mail, Phone, Menu, X, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import logoAsset from "@/assets/quick-fiber-logo.png.asset.json";
 
 const navItems = [
-  { label: "Home", href: "#top" },
-  { label: "Home Connect+", href: "#home-connect" },
-  { label: "Business Connect+", href: "#business-connect" },
-  { label: "Reseller", href: "#reseller" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Home", hash: "top" },
+  { label: "Home Connect+", hash: "home-connect" },
+  { label: "Business Connect+", hash: "business-connect" },
+  { label: "Reseller", to: "/reseller" as const },
+  { label: "Contact Us", hash: "contact" },
 ];
 
 export function Logo() {
