@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Mail, Phone, Menu, X, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import logoAsset from "@/assets/quick-fiber-logo.png.asset.json";
 
 const navItems = [
   { label: "Home", href: "#top" },
@@ -11,14 +12,14 @@ const navItems = [
 
 export function Logo() {
   return (
-    <a href="#top" className="flex items-baseline font-display text-3xl font-bold leading-none">
-      <span className="text-navy-foreground">qu</span>
-      <span className="relative text-navy-foreground">
-        i
-        <span className="absolute -top-1 left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-primary" />
-      </span>
-      <span className="text-navy-foreground">ck</span>
-      <span className="ml-1 text-lg font-semibold text-primary">Fiber</span>
+    <a href="#top" aria-label="Quick Fiber home" className="inline-flex shrink-0 items-center">
+      <img
+        src={logoAsset.url}
+        alt="Quick Fiber"
+        width={210}
+        height={84}
+        className="h-14 w-auto object-contain sm:h-16"
+      />
     </a>
   );
 }
