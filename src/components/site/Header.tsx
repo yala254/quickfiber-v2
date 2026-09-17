@@ -20,9 +20,9 @@ export function Logo() {
       <img
         src={logoAsset.url}
         alt="Quick Fiber"
-        width={210}
-        height={84}
-        className="h-12 w-auto object-contain drop-shadow-[0_2px_6px_rgba(0,0,0,0.45)] sm:h-14"
+        width={250}
+        height={100}
+        className="h-16 w-auto object-contain drop-shadow-[0_2px_6px_rgba(0,0,0,0.45)] sm:h-20"
       />
     </a>
   );
